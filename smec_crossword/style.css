@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-weight: bold;
+    color: red;
+}
+
+/* Updated crossword grid styling */
+.crossword-grid {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure all cells have visible borders */
+.crossword-grid td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #000 !important;  /* Force black borders */
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Shade unused cells */
+.crossword-grid .shaded-cell {
+    background-color: #d6d6d6;
+    border: 2px solid #000 !important; /* Ensure all grid cells have borders */
+}
+
+/* Answer cells with input fields */
+.crossword-grid .answer-cell {
+    background-color: #ffffff;
+    position: relative;
+    border: 2px solid #000 !important; /* Make sure answer cells have visible borders */
+}
+
+/* Ensure input box takes full space and has a border */
+.crossword-grid .answer-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;  /* Remove default border */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    background: transparent;
+}
+
+/* Numbering for clues inside the cell */
+.crossword-grid .clue-number {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for clue list */
+ul {
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button styles */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
